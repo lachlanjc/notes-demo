@@ -1,28 +1,17 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Notes</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Content</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @notes.each do |note| %>
-      <tr>
-        <td><%= note.name %></td>
-        <td><%= note.content %></td>
-        <td><%= link_to 'Show', note %></td>
-        <td><%= link_to 'Edit', edit_note_path(note) %></td>
-        <td><%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<% @notes.each do |note| %>
+  <div class="note">
+    <h2><%= note.name %></h2>
+    <div><%= note.content %></div>
+    <footer>
+      <%= link_to 'Show', note %>
+      <%= link_to 'Edit', edit_note_path(note) %>
+      <%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </footer>
+  </div>
+<% end %>
 
 <br>
 

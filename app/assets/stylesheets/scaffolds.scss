@@ -1,16 +1,21 @@
 body {
   background-color: #fff;
   color: #333;
-  margin: 33px;
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
+  font-family: "Avenir Next", Avenir, helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2rem;
+  color: tomato;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
 }
 
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
+  font-family: inherit;
+  font-size: 1rem;
 }
 
 pre {
@@ -20,24 +25,16 @@ pre {
 }
 
 a {
-  color: #000;
+  color: cornflowerblue;
 
   &:visited {
-    color: #666;
+    color: cornflowerblue;
   }
 
   &:hover {
     color: #fff;
-    background-color: #000;
+    background-color: cornflowerblue;
   }
-}
-
-th {
-  padding-bottom: 5px;
-}
-
-td {
-  padding: 0 5px 7px;
 }
 
 div {
@@ -59,7 +56,8 @@ div {
 #error_explanation {
   width: 450px;
   border: 2px solid red;
-  padding: 7px 7px 0;
+  padding: 7px;
+  padding-bottom: 0;
   margin-bottom: 20px;
   background-color: #f0f0f0;
 
@@ -68,7 +66,8 @@ div {
     font-weight: bold;
     padding: 5px 5px 5px 15px;
     font-size: 12px;
-    margin: -7px -7px 0;
+    margin: -7px;
+    margin-bottom: 0px;
     background-color: #c00;
     color: #fff;
   }
@@ -77,8 +76,4 @@ div {
     font-size: 12px;
     list-style: square;
   }
-}
-
-label {
-  display: block;
 }
